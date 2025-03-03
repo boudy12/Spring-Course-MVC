@@ -44,4 +44,15 @@ public class HelloWorldController {
 		
 		return "helloworld";
 	}
+	
+	@GetMapping("/processFormVersionFour")
+	public String letsShowDataVersion3(@RequestParam("studentName") String theName, Model model) {
+		
+		theName = theName.toUpperCase();
+		String result = "Hi, " + theName;
+		model.addAttribute("message", result);	
+		
+		return "helloworld";
+	}
+	
 }
