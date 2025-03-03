@@ -49,7 +49,7 @@ public class HelloWorldController {
 	public String letsShowDataVersion3(@RequestParam("studentName") String theName, Model model) {
 		
 		theName = theName.toUpperCase();
-		String result = "Hi, " + theName;
+		String result = "Hi , " + theName;
 		model.addAttribute("message", result);	
 		
 		return "helloworld";
